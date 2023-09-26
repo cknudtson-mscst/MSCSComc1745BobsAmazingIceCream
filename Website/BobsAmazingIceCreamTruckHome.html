@@ -12,13 +12,27 @@
     <!-- Navigation and Links -->
 
     <div>
-        <nav>
-            <img src="../Images/Ice_Cream_Truck_Logo.png" alt="Bob's Amazing Ice Cream Truck'" />
+        <nav class="navbar">
+            <img src="../Images/Ice_Cream_Truck_Logo.png" alt="Bob's Amazing Ice Cream Truck" />
             <ul>
-                <li>Home</li>
-                <li>Menu/Order</li>
-                <li>Ice Cream Truck Location/Times</li>
-                <li>Party?</li>
+                <li>
+                    <a href="#">Profile</a>
+                    <ul>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Website/BobsAmazingIceCreamTruckHome.html">Home</a></li>
+                <li>
+                    <a href="#">Links</a>
+                    <ul>
+                        <li><a href="../Website/BobsAmazingIceCreamTruckMenu.html">Menu</a></li>
+                        <li><a href="../Website/BobsAmazingIceCreamTruckMapTime.html">Ice Cream Truck Locations/Times</a></li>
+                        <li><a href="#">Party?</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Website/BobsAmazingIceCreamTruckHome.html#Contact">Contact</a></li>
+                <li id="Search"><input type="search"></li>
             </ul>
         </nav>
     </div>
@@ -29,7 +43,7 @@
         <article>
             <h1 class="PageTopText">Bob's Amazing Ice Cream Truck has you covered! From ice cream to parties, we got you covered</h1>
             <img id="IceCreamTruckImage" src="../Images/IceCreamTruckIRL.png" alt="Bob's Ice Cream Truck" />
-            <p class="PageTopText" >Go ahead and look for our nearest ice cream truck in your location or get a reservation for that party you've been planning!</p>
+            <p class="PageTopText" id="BookingText" >Go ahead and look for our nearest ice cream truck in your location or get a reservation for that party you've been planning!</p>
         </article>
     </div>
 
@@ -38,9 +52,11 @@
     <div>
         <article>
             <img id="HandingIceCream" src="../Images/GivingIceCreamBG.png" />
-            <div>
-                <p>We are here to serve you!</p>
-                <p>Start a order!</p>
+            <div id="ImageText">
+                <p>We are here to serve you!
+                    
+                   Start a order!
+                </p>
             </div>
         </article>
     </div>
@@ -64,7 +80,7 @@
 <footer>
     <p>Bob's Amazing Ice Cream Truck</p>
     <p>&nbsp</p>
-    <p>Questions or Inquiries?</p>
+    <p id="Contact">Questions or Inquiries?</p>
     <p>Phone: <a href="tel:6511111111">(651) 111-1111</a></p>
     <p>Email: <a href="mailto:BobsIceCreamTruckBusiness@email.com">BobsIceCreamTruckBusiness@email.com</a></p>
 </footer>
