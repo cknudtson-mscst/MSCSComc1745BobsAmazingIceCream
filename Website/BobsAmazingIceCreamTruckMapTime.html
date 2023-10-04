@@ -3,8 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Bobs Amazing Ice Cream Truck</title>
-    <link href="../Styles/BaseTemplate.css" rel="stylesheet" />
+    <link href="../Styles/BaseTemplate.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/TruckMapTime.css" rel="stylesheet" type="text/css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -36,6 +40,66 @@
             </ul>
         </nav>
     </div>
+
+    <!-- The first 1/2 Page with the Radio Selector and Times -->
+
+    <h1>Ice Cream Truck Location & Times</h1>
+
+    <form action="">
+        <label class="RadioLocation" for="RedWing-MN">
+            <input id="RedWing-MN" type="radio" name="LocationSelector" />
+            Red Wing, MN
+        </label>
+
+        <label class="RadioLocation" for="Zumbrota-MN">
+            <input id="Zumbrota-MN" type="radio" name="LocationSelector" />
+            Zumbrota, MN
+        </label>
+
+        <label class="RadioLocation" for="LakeCity-MN">
+            <input id="LakeCity-MN" type="radio" name="LocationSelector" />
+            Lake City, MN
+        </label>
+
+        <label class="RadioLocation" for="CannonFalls-MN">
+            <input id="CannonFalls-MN" type="radio" name="LocationSelector" />
+            Cannon Falls, MN
+        </label>
+
+        <label class="RadioLocation" for="Rochester-MN">
+            <input id="Rochester-MN" type="radio" name="LocationSelector" />
+            Rochester, MN
+        </label>
+    </form>
+
+
+    <!-- Below is the the Map. To add Mapbox (I am not signing up for google's stuff), I refered to https://www.mapbox.com/install/javascript/cdn-install/ -->
+
+    <div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWRjNTY5IiwiYSI6ImNsbjNpbzltajBnbjEybXA3MTFqZzZ5angifQ.YGBI84gs5Vo_GHg-eid4QQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/davidc569/cln3j7evi06pn01nsfmjq21vw',
+            center: [-92.5370, 44.5661],
+            zoom: 13
+        });
+
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+
+    <!-- Rest of the page -->
+
+    <div id="BottomPage">
+        <h1>Red Wing Schedule</h1>
+        <ul>
+            <li>Covill Park: Monday-Friday: 12pm-3pm</li>
+            <li>Anderson Park: Monday Only: 3:15pm-4pm</li>
+            <li>Baypoint Park: Monday-Friday: 3:15pm-4pm</li>
+            <li>Central Park Bandshell: Monday-Friday: 4:15pm-5pm</li>
+        </ul>
+    </div>
+    <h1>Looking for parties instead?</h1>
 </body>
 </html>
 

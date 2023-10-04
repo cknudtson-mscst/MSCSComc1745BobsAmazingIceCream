@@ -1,0 +1,117 @@
+﻿h1 {
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1050px) {
+    form {
+        display: inline-block;
+        width: 175px;
+        line-height: 85px;
+        padding-left: 100px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+
+    .RadioLocation {
+        align-items: center;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #map {
+        width: 500px;
+        height: 400px;
+        float: right;
+        margin-right: 200px;
+    }
+
+    #BottomPage {
+        width: 100%;
+    }
+
+    #BottomPage h1 {
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    #BottomPage ul {
+        padding-left: 125px;
+    }
+
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1049.99px) {
+    form {
+        display: inline-block;
+        width: 175px;
+        line-height: 85px;
+        padding-left: 30px;
+        padding-right: 25px;
+        font-size: 20px;
+    }
+
+    .RadioLocation {
+        align-items: center;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #map {
+        width: 500px;
+        height: 400px;
+        float: right;
+        margin-right: 50px;
+    }
+
+    #BottomPage {
+        width: 100%;
+    }
+
+    #BottomPage h1 {
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    #BottomPage ul {
+        padding-left: 125px;
+    }
+}
+
+@media only screen and (max-width: 799.99px) {
+    form {
+        display: flex;
+        width: 100%;
+        line-height: 25px;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .RadioLocation {
+        align-items: center;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #BottomPage {
+        width: 100%;
+    }
+
+    #BottomPage h1 {
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    #BottomPage ul {
+        padding-left: 125px;
+        line-height: 30px;
+    }
+}

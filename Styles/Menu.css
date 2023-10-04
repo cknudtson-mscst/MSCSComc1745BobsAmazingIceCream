@@ -1,0 +1,68 @@
+﻿@media only screen and (min-width:775px) {
+    .Cone {
+        height: 500px;
+        width: 32%;
+        transition-duration: 0.1s;
+        float: left;
+        padding: 5px;
+    }
+
+    .Cone::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .OtherImages {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 774.99px) {
+    .Cone {
+        height: 300px;
+        width: 30%;
+        transition-duration: 0.1s;
+        float: left;
+        padding: 5px;
+    }
+
+    .Cone::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+
+    p {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .OtherImages {
+        width: 100%;
+    }
+}
